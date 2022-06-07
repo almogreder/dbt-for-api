@@ -1,0 +1,14 @@
+version: 2
+
+models:
+    - name: flight_logs_updated
+      description: "A constantly updating table with the flight logs of each country"
+      columns:
+        - name: flight_id
+          description: "a unique id for each flight"
+          tests:
+            - unique
+            - not_null
+
+    - name: countries_with_flights
+      description: "A table containing the countries and the number of flights in the country in our current database"

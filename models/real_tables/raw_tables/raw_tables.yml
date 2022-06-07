@@ -1,0 +1,14 @@
+version: 2
+
+models:
+    - name: countries_data
+      description: "A table containing the countries of the world"
+      columns:
+          - name: Country
+            description: "The primary key for this table, the name of the country"
+            tests:
+                - unique
+                - not_null
+
+    - name: flight_logs_data
+      description: "A table containing the recent 1000 flight logs"
